@@ -1,8 +1,10 @@
 import sys
 from typing import Dict, List, Optional, Tuple
 from blspy import (PrivateKey, AugSchemeMPL, G1Element, G2Element)
-from chia_blockchain.chia.types.spend_bundle import SpendBundle
-from chia_blockchain.chia.wallet.transaction_record import TransactionRecord
+import pymerkle
+from chia.types.spend_bundle import SpendBundle
+from chia.wallet.transaction_record import TransactionRecord
+
 sys.path.append('../chia_blockchain')
 
 
@@ -30,11 +32,10 @@ class Aggregator:
         self.signed_digest = List[G2Element]()
         self.agg_digest = G2Element()
 
-    def receive_transaction(self):
+    def receive_transaction(self) -> None:
         """
         TODO: beginning to be defined by Alberto
         """
-
 
     def create_batch(self):
         """

@@ -27,4 +27,4 @@ if __name__ == '__main__':
 
     ok = AugSchemeMPL.aggregate_verify([pk1, pk2], [message, message2], agg_sig)
     print(ok)
-    assert ok
+    print(bytes32)
