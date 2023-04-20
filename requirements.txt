@@ -1,0 +1,3 @@
+chia-blockchain
+blspy~=1.0.16
+pymerkle~=4.0.0
