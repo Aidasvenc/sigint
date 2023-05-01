@@ -1,7 +1,7 @@
 import concurrent.futures
 import time
 from typing import Dict, List, Optional, Tuple
-from blspy import (PrivateKey, AugSchemeMPL, G1Element, G2Element)
+from blspy import (PrivateKey, PopSchemeMPL, G1Element, G2Element)
 from pymerkle import MerkleTree
 from chia.types.spend_bundle import SpendBundle
 
@@ -20,7 +20,7 @@ class Aggregator:
     batch: List[Tuple[SpendBundle, G1Element]]  # batch of transactions to be aggregated
     digest: MerkleTree  # digest of a batch in a form of Merkle Tree
     signed_digest: List[G2Element]  # all signatures of digest
-    single_transactions: List[SpendBundle]  # all transactions that could not complete digest signing
+    single_transactions: List[Tuple[SpendBundle, G1Element]]  # all transactions that could not complete digest signing
     agg_signed_digest: G2Element  # aggregated digest signatures
 
     def __init__(self, batch_threshold: int):
@@ -51,7 +51,9 @@ class Aggregator:
         generates a merkle tree from the batch
         """
         for (tx, signature) in self.batch:
-            # TODO: are messages or signatures put into a merkle tree?
+            # TODO: need to put SpendBundles and not signatures into a digest
+            # However, spend bundles have aggregate signatures field, which takes additional space, so we should get rid
+            # of it when SIGINT is used to maximize space and time efficiency
             self.digest.append_entry(bytes(tx.aggregated_signature))
         return self.request_to_sign_digest()
 
@@ -86,7 +88,8 @@ class Aggregator:
         """
         aggregates signatures of a digest in a batch
         """
-        self.agg_signed_digest = AugSchemeMPL.aggregate(self.signed_digest)
+        self.agg_signed_digest = PopSchemeMPL.aggregate(self.signed_digest)
+        # TODO: consider aggregating the public keys to make verification faster
 
     def send_to_verifier(self):
         """
