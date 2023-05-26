@@ -4,6 +4,7 @@ from typing import Dict, List, Optional, Tuple
 from blspy import (PrivateKey, PopSchemeMPL, G1Element, G2Element)
 from pymerkle import MerkleTree
 from chia.types.spend_bundle import SpendBundle
+# import wallet from wallet
 
 
 class Aggregator:
@@ -24,14 +25,14 @@ class Aggregator:
     agg_signed_digest: G2Element  # aggregated digest signatures
 
     def __init__(self, batch_threshold: int):
-        self.signed_transactions = List[Tuple[SpendBundle, G1Element]]()
+        self.signed_transactions = list[Tuple[SpendBundle, G1Element]]()
         self.batch_threshold = batch_threshold
-        self.batch = List[Tuple[SpendBundle, G1Element]]()
+        self.batch = list[Tuple[SpendBundle, G1Element]]()
         self.digest = MerkleTree()
-        self.signed_digest = List[G2Element]()
+        self.signed_digest = list[G2Element]()
         self.agg_signed_digest = G2Element()
 
-    def receive_transaction(self) -> None:
+    async def receive_transaction(self) -> None:
         """
         TODO: to be implemented
         """
@@ -71,7 +72,7 @@ class Aggregator:
 
         # Check the status of each request
         for future in future_to_request:
-            (receiver, data) = future_to_request[future]
+            receiver, _  = future_to_request[future]
             if not future.done() or future.cancelled():
                 future.cancel()
                 self.single_transactions.append(receiver)

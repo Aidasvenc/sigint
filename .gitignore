@@ -1,2 +1,3 @@
 chia_blockchain/
 .idea
+__pycache__/
