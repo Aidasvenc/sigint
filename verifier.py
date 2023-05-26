@@ -20,7 +20,7 @@ class Verifier:
         self.batch = []
         self.batch_pks = list[G1Element]()
         self.digest = MerkleTree()
-        self.single_transactions = List[Tuple[SpendBundle, G1Element]]()
+        self.single_transactions = list[Tuple[SpendBundle, G1Element]]()
         self.agg_signed_digest = G2Element()
 
     def receive_transactions(self) -> None:
