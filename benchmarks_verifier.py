@@ -232,12 +232,14 @@ def run_optimal_block(spend_bundles, sigs, pks):
     # run benchmarking
     times_sum = [0] * 624
     num_transactions = [0] * 624
-    for epoch in range(0, 3):
+    for epoch in range(0, 6):
         print('epoch', epoch)
         for i in range(10, 624):
             print('iteration', i)
             # generate the digest of all spend_bundles
+            time_digest_start = time.time()
             digest = generate_digest(spend_bundles[0:i])
+            time_digest = time.time() - time_digest_start
 
             # all clients sign the digest
             sks_digest = []
@@ -253,17 +255,17 @@ def run_optimal_block(spend_bundles, sigs, pks):
             sig_agg_digest = aggregate_batch(sigs_digest)
 
             # aggregate single signatures
-            sig_agg_single = aggregate_single(sigs[i:(i+i/10)-1])
+            sig_agg_single = aggregate_single(sigs[0:int(i/10-1)])
 
             # verify the aggregate signatures
             verified, verification_time = verify_batch(sig_agg_digest, digest, pks_digest[0:i])
 
             # verify single signatures
-            verified2, verification_time2 = verify_single(sig_agg_single, spend_bundles[i:(i+i/10)-1], pks[i:(i+i/10)-1])
+            verified2, verification_time2 = verify_single(sig_agg_single, spend_bundles[0:int(i/10-1)], pks[0:int(i/10-1)])
 
             # add to plot
             num_transactions[i] = i
-            times_sum[i] += verification_time + verification_time2
+            times_sum[i] += verification_time + verification_time2 + time_digest
 
     times_sum = [elem/3 for elem in times_sum]
     plt.plot(num_transactions[10:], times_sum[10:])
@@ -272,12 +274,23 @@ def run_optimal_block(spend_bundles, sigs, pks):
     plt.title('Verification time for different-sized blocks (assuming 10% stragglers)')
     plt.show()
 
+    # Convert arrays to strings
+    num_transactions_str = np.array2string(np.array(num_transactions[10:]), separator=',')
+    times_sum_str = np.array2string(np.array(times_sum[10:]), separator=',')
+
+    # Prepare the data to be written
+    data = f"Number of transactions: {num_transactions_str}\nVerification time: {times_sum_str}"
+
+    # Write the data to the file
+    with open("optimal_block1.txt", 'w') as file:
+        file.write(data)
+
 
 def run_block_with_digest_regeneration(spend_bundles, sigs, pks):
     # run benchmarking
     times_sum = [0] * 624
     single_transactions = [0] * 624
-    for epoch in range(0, 3):
+    for epoch in range(0, 6):
         print('epoch', epoch)
         for i in range(0, 624):
             print('iteration', i)
@@ -319,6 +332,17 @@ def run_block_with_digest_regeneration(spend_bundles, sigs, pks):
     plt.title('Verification time for 625 transactions (including digest regeneration)')
     plt.show()
 
+    # Convert arrays to strings
+    num_transactions_str = np.array2string(np.array(single_transactions), separator=',')
+    times_sum_str = np.array2string(np.array(times_sum), separator=',')
+
+    # Prepare the data to be written
+    data = f"Number of transactions: {num_transactions_str}\nVerification time: {times_sum_str}"
+
+    # Write the data to the file
+    with open("block_with_digest.txt", 'w') as file:
+        file.write(data)
+
 
 if __name__ == '__main__':
     # create 625 spend bundles (assuming 10 coin spends per spend bundle) that will be in the block
@@ -356,3 +380,6 @@ if __name__ == '__main__':
 
     # test 6
     run_block_with_digest_regeneration(spend_bundles, sigs, pks)
+
+    # test 7
+    # run_optimal_block(spend_bundles, sigs, pks)
