@@ -1,4 +1,3 @@
-import asyncio
 from chia.rpc.wallet_rpc_client import WalletRpcClient
 from chia.util.config import load_config
 from pathlib import Path
