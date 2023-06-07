@@ -1,11 +1,17 @@
 import concurrent.futures
 import time
-from typing import Dict, List, Optional, Tuple
-from blspy import (PrivateKey, PopSchemeMPL, G1Element, G2Element)
+from typing import List, Tuple
+from blspy import (PopSchemeMPL, G1Element, G2Element)
+from chia.rpc.wallet_rpc_client import WalletRpcClient
+from chia.wallet.transaction_record import TransactionRecord
 from pymerkle import MerkleTree
 from chia.types.spend_bundle import SpendBundle
-# import wallet from wallet
+from threading import Lock
+from wallet import get_wallet
+import asyncio
+from logging import Logger
 
+log = Logger("aggregator")
 
 class Aggregator:
     """
@@ -16,46 +22,59 @@ class Aggregator:
     2. Fill the array gradually by receiving requests that contain transactions(or SpendBundles)
     """
 
-    signed_transactions: List[Tuple[SpendBundle, G1Element]]  # use generate_signed_transaction() from wallet_tools
+    signed_transactions: List[Tuple[G1Element, TransactionRecord]]  # use generate_signed_transaction() from wallet_tools
     batch_threshold: int  # number of transactions that are aggregated into a batch
-    batch: List[Tuple[SpendBundle, G1Element]]  # batch of transactions to be aggregated
+    batch: List[Tuple[G1Element, TransactionRecord]]  # batch of transactions to be aggregated
     digest: MerkleTree  # digest of a batch in a form of Merkle Tree
     signed_digest: List[G2Element]  # all signatures of digest
     single_transactions: List[Tuple[SpendBundle, G1Element]]  # all transactions that could not complete digest signing
-    agg_signed_digest: G2Element  # aggregated digest signatures
+    lock : Lock
+    wallet: WalletRpcClient
 
-    def __init__(self, batch_threshold: int):
-        self.signed_transactions = list[Tuple[SpendBundle, G1Element]]()
+    def __init__(self, batch_threshold: int, wallet: WalletRpcClient):
+        self.signed_transactions = list()
         self.batch_threshold = batch_threshold
-        self.batch = list[Tuple[SpendBundle, G1Element]]()
+        self.batch = list()
         self.digest = MerkleTree()
-        self.signed_digest = list[G2Element]()
-        self.agg_signed_digest = G2Element()
+        self.signed_digest = list()
+        self.wallet = wallet
 
-    async def receive_transaction(self) -> None:
-        """
-        TODO: to be implemented
-        """
+    def wait_for_txs(self):
+        log.info("Started aggregator main loop")
+        while True:
+            log.info("Attempting aggregation")
+            time.sleep(10)
+            self.create_batch()
+        
+    def receive_transaction(self, pk: G1Element, tx: TransactionRecord) -> None:
+            self.signed_transactions.append((pk, tx))
+
 
     def create_batch(self):
         """
-        creates a batch from the SpendBundles that were accumulated
+        Attemps to creates a batch from the SpendBundles that were accumulated
         """
+    
         if len(self.signed_transactions) > self.batch_threshold:
+            # copy the queued signed transaction in the batch
             self.batch = self.signed_transactions[:]
-            return self.generate_digest()
-
-        return print('There is not enough transactions to put in a batch')
+            # empty queue
+            with self.lock:
+                self.signed_transactions = []
+            self.generate_digest()
+        log.info(f"Aggregation not possible, waiting for {self.batch_threshold - len(self.signed_transactions)} tx(s)")
 
     def generate_digest(self):
         """
+        TODO here it should accept multiple wallets and iterate through them
         generates a merkle tree from the batch
         """
-        for (tx, signature) in self.batch:
-            # TODO: need to put SpendBundles and not signatures into a digest
-            # However, spend bundles have aggregate signatures field, which takes additional space, so we should get rid
-            # of it when SIGINT is used to maximize space and time efficiency
-            self.digest.append_entry(bytes(tx.aggregated_signature))
+        for _, tx in self.batch:
+            spend_bundle = tx.spend_bundle
+            if spend_bundle is None:
+                log.error("Received transaction doesn't contain a spend bundle")
+            else:
+                self.digest.append_entry(bytes(tx)) # TODO should I cast this to bytes
         return self.request_to_sign_digest()
 
     def request_to_sign_digest(self):
@@ -63,28 +82,28 @@ class Aggregator:
         requests all clients in a batch of transactions to sign the generated digest in parallel
         """
         # send requests in parallel
+        pending_singatures: List[concurrent.futures.Future] = list()
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            future_to_request = {executor.submit(self.send_request, receiver, self.digest): (receiver, self.digest)
-                                 for receiver in self.batch}
+            for _, tx in self.batch:
+                pending_singatures.append(executor.submit(self.send_request, self.wallet, tx))
 
         # Wait for some time for the requests to complete
         time.sleep(10)
 
         # Check the status of each request
-        for future in future_to_request:
-            receiver, _  = future_to_request[future]
+        for future in pending_singatures:
             if not future.done() or future.cancelled():
                 future.cancel()
-                self.single_transactions.append(receiver)
+                # self.single_transactions.append(receiver)
 
         return self.aggregate_batch()
 
-    def send_request(self, receiver, data):
-        """
-        sends a single request to a receiver
-        TODO: to be implemented
-        """
+    def send_request(self, wallet: WalletRpcClient, tx: TransactionRecord):
+        target = self.digest.root_node
+        proof = self.digest.prove_inclusion(bytes(tx))
+        wallet.sign_digest(target, proof, tx)
 
+        
     def aggregate_batch(self):
         """
         aggregates signatures of a digest in a batch
@@ -92,9 +111,10 @@ class Aggregator:
         self.agg_signed_digest = PopSchemeMPL.aggregate(self.signed_digest)
         # TODO: consider aggregating the public keys to make verification faster
 
-    def send_to_verifier(self):
+    async def send_to_verifier(self):
         """
         submits the aggregated signed batch and any unsuccessfully signed transactions
         to the verifier.
-        TODO: To be defined
         """
+        await self.wallet.send_aggregated_transactions([], "signature placeholder")
+        

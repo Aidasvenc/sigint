@@ -32,12 +32,12 @@ class Verifier:
         """
         generates a merkle tree from the batch
         """
-        for (tx, signature) in self.batch:
-            # TODO: need to put SpendBundles and not signatures into a digest
-            # However, spend bundles have aggregate signatures field, which takes additional space, so we should get rid
-            # of it when SIGINT is used to maximize space and time efficiency
-            self.digest.append_entry(bytes(tx.aggregated_signature))
-        return
+        # for (tx, signature) in self.batch:
+        #     # TODO: need to put SpendBundles and not signatures into a digest
+        #     # However, spend bundles have aggregate signatures field, which takes additional space, so we should get rid
+        #     # of it when SIGINT is used to maximize space and time efficiency
+        #     self.digest.append_entry(bytes(tx.aggregated_signature))
+        # return
 
     def verify(self):
         """
