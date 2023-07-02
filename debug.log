@@ -1,0 +1,703 @@
+2023-06-08 22:41:15,441 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 22:41:15,442 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 22:41:32,648 [INFO] Started aggregator main loop
+2023-06-08 22:41:32,648 [INFO] Attempting aggregation
+2023-06-08 22:41:42,658 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:41:42,658 [INFO] Attempting aggregation
+2023-06-08 22:41:52,667 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:41:52,667 [INFO] Attempting aggregation
+2023-06-08 22:41:56,109 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc4be5c8070>
+2023-06-08 22:42:34,352 [INFO] Started aggregator main loop
+2023-06-08 22:42:44,360 [INFO] Attempting aggregation
+2023-06-08 22:42:44,360 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:42:54,370 [INFO] Attempting aggregation
+2023-06-08 22:42:54,370 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:04,380 [INFO] Attempting aggregation
+2023-06-08 22:43:04,380 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:14,390 [INFO] Attempting aggregation
+2023-06-08 22:43:14,390 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:24,400 [INFO] Attempting aggregation
+2023-06-08 22:43:24,401 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:34,405 [INFO] Attempting aggregation
+2023-06-08 22:43:34,405 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:44,413 [INFO] Attempting aggregation
+2023-06-08 22:43:44,413 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:43:54,424 [INFO] Attempting aggregation
+2023-06-08 22:43:54,424 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:04,433 [INFO] Attempting aggregation
+2023-06-08 22:44:04,434 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:14,439 [INFO] Attempting aggregation
+2023-06-08 22:44:14,440 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:24,450 [INFO] Attempting aggregation
+2023-06-08 22:44:24,450 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:34,460 [INFO] Attempting aggregation
+2023-06-08 22:44:34,461 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:44,470 [INFO] Attempting aggregation
+2023-06-08 22:44:44,470 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:44:54,480 [INFO] Attempting aggregation
+2023-06-08 22:44:54,480 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:04,490 [INFO] Attempting aggregation
+2023-06-08 22:45:04,490 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:14,497 [INFO] Attempting aggregation
+2023-06-08 22:45:14,497 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:24,507 [INFO] Attempting aggregation
+2023-06-08 22:45:24,507 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:34,517 [INFO] Attempting aggregation
+2023-06-08 22:45:34,517 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:44,527 [INFO] Attempting aggregation
+2023-06-08 22:45:44,527 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:45:54,537 [INFO] Attempting aggregation
+2023-06-08 22:45:54,537 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:04,547 [INFO] Attempting aggregation
+2023-06-08 22:46:04,547 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:14,556 [INFO] Attempting aggregation
+2023-06-08 22:46:14,556 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:24,563 [INFO] Attempting aggregation
+2023-06-08 22:46:24,564 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:34,574 [INFO] Attempting aggregation
+2023-06-08 22:46:34,574 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:44,584 [INFO] Attempting aggregation
+2023-06-08 22:46:44,584 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:46:54,593 [INFO] Attempting aggregation
+2023-06-08 22:46:54,593 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:47:04,603 [INFO] Attempting aggregation
+2023-06-08 22:47:04,603 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:47:14,614 [INFO] Attempting aggregation
+2023-06-08 22:47:14,614 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:47:24,623 [INFO] Attempting aggregation
+2023-06-08 22:47:24,624 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:47:34,624 [INFO] Attempting aggregation
+2023-06-08 22:47:34,624 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:47:43,752 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7eff019d4190>
+2023-06-08 22:51:26,063 [INFO] Started aggregator main loop
+2023-06-08 22:51:36,073 [INFO] Attempting aggregation
+2023-06-08 22:51:36,073 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:51:38,141 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 22:51:38,141 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 22:51:46,084 [INFO] Attempting aggregation
+2023-06-08 22:51:46,084 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:51:56,094 [INFO] Attempting aggregation
+2023-06-08 22:51:56,095 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:06,105 [INFO] Attempting aggregation
+2023-06-08 22:52:06,106 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:16,113 [INFO] Attempting aggregation
+2023-06-08 22:52:16,113 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:26,123 [INFO] Attempting aggregation
+2023-06-08 22:52:26,123 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:36,133 [INFO] Attempting aggregation
+2023-06-08 22:52:36,133 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:46,137 [INFO] Attempting aggregation
+2023-06-08 22:52:46,137 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:52:56,147 [INFO] Attempting aggregation
+2023-06-08 22:52:56,148 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:06,157 [INFO] Attempting aggregation
+2023-06-08 22:53:06,157 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:16,166 [INFO] Attempting aggregation
+2023-06-08 22:53:16,167 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:26,176 [INFO] Attempting aggregation
+2023-06-08 22:53:26,177 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:36,186 [INFO] Attempting aggregation
+2023-06-08 22:53:36,187 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:46,196 [INFO] Attempting aggregation
+2023-06-08 22:53:46,197 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:53:48,697 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb3c25f8760>
+2023-06-08 22:53:52,199 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 22:53:52,199 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 22:53:55,572 [INFO] Started aggregator main loop
+2023-06-08 22:54:05,580 [INFO] Attempting aggregation
+2023-06-08 22:54:05,580 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:54:15,588 [INFO] Attempting aggregation
+2023-06-08 22:54:15,588 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:54:25,594 [INFO] Attempting aggregation
+2023-06-08 22:54:25,594 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:54:35,603 [INFO] Attempting aggregation
+2023-06-08 22:54:35,603 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:54:45,613 [INFO] Attempting aggregation
+2023-06-08 22:54:45,614 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:54:55,624 [INFO] Attempting aggregation
+2023-06-08 22:54:55,624 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:05,635 [INFO] Attempting aggregation
+2023-06-08 22:55:05,635 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:15,643 [INFO] Attempting aggregation
+2023-06-08 22:55:15,643 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:25,653 [INFO] Attempting aggregation
+2023-06-08 22:55:25,653 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:35,663 [INFO] Attempting aggregation
+2023-06-08 22:55:35,663 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:45,667 [INFO] Attempting aggregation
+2023-06-08 22:55:45,667 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:55:55,669 [INFO] Attempting aggregation
+2023-06-08 22:55:55,669 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:56:05,673 [INFO] Attempting aggregation
+2023-06-08 22:56:05,673 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:56:06,892 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fbfaa3e07f0>
+2023-06-08 22:56:10,761 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 22:56:10,761 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 22:56:13,073 [INFO] Started aggregator main loop
+2023-06-08 22:56:23,084 [INFO] Attempting aggregation
+2023-06-08 22:56:23,084 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:56:33,095 [INFO] Attempting aggregation
+2023-06-08 22:56:33,095 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:56:43,103 [INFO] Attempting aggregation
+2023-06-08 22:56:43,104 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:56:53,114 [INFO] Attempting aggregation
+2023-06-08 22:56:53,114 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:57:03,124 [INFO] Attempting aggregation
+2023-06-08 22:57:03,124 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:57:13,134 [INFO] Attempting aggregation
+2023-06-08 22:57:13,134 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:57:23,144 [INFO] Attempting aggregation
+2023-06-08 22:57:23,145 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:57:33,153 [INFO] Attempting aggregation
+2023-06-08 22:57:33,153 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:57:40,350 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fc7bdbf87c0>
+2023-06-08 22:57:43,574 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 22:57:43,574 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 22:57:47,155 [INFO] Started aggregator main loop
+2023-06-08 22:57:57,165 [INFO] Attempting aggregation
+2023-06-08 22:57:57,166 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:07,173 [INFO] Attempting aggregation
+2023-06-08 22:58:07,173 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:17,183 [INFO] Attempting aggregation
+2023-06-08 22:58:17,183 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:27,192 [INFO] Attempting aggregation
+2023-06-08 22:58:27,193 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:37,203 [INFO] Attempting aggregation
+2023-06-08 22:58:37,204 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:47,213 [INFO] Attempting aggregation
+2023-06-08 22:58:47,213 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:58:57,222 [INFO] Attempting aggregation
+2023-06-08 22:58:57,222 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:07,232 [INFO] Attempting aggregation
+2023-06-08 22:59:07,232 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:17,240 [INFO] Attempting aggregation
+2023-06-08 22:59:17,240 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:27,250 [INFO] Attempting aggregation
+2023-06-08 22:59:27,251 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:37,261 [INFO] Attempting aggregation
+2023-06-08 22:59:37,262 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:47,271 [INFO] Attempting aggregation
+2023-06-08 22:59:47,271 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 22:59:57,280 [INFO] Attempting aggregation
+2023-06-08 22:59:57,281 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:07,290 [INFO] Attempting aggregation
+2023-06-08 23:00:07,290 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:17,300 [INFO] Attempting aggregation
+2023-06-08 23:00:17,300 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:27,310 [INFO] Attempting aggregation
+2023-06-08 23:00:27,310 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:37,320 [INFO] Attempting aggregation
+2023-06-08 23:00:37,320 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:47,330 [INFO] Attempting aggregation
+2023-06-08 23:00:47,330 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:00:57,340 [INFO] Attempting aggregation
+2023-06-08 23:00:57,340 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:07,350 [INFO] Attempting aggregation
+2023-06-08 23:01:07,350 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:17,360 [INFO] Attempting aggregation
+2023-06-08 23:01:17,360 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:27,370 [INFO] Attempting aggregation
+2023-06-08 23:01:27,370 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:37,378 [INFO] Attempting aggregation
+2023-06-08 23:01:37,378 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:47,387 [INFO] Attempting aggregation
+2023-06-08 23:01:47,387 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:01:57,398 [INFO] Attempting aggregation
+2023-06-08 23:01:57,398 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:02:07,406 [INFO] Attempting aggregation
+2023-06-08 23:02:07,407 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:02:11,380 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa45f9d8820>
+2023-06-08 23:02:23,287 [INFO] Started aggregator main loop
+2023-06-08 23:02:33,294 [INFO] Attempting aggregation
+2023-06-08 23:02:33,294 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:02:43,303 [INFO] Attempting aggregation
+2023-06-08 23:02:43,303 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:02:53,307 [INFO] Attempting aggregation
+2023-06-08 23:02:53,307 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:02:54,346 [INFO] 127.0.0.1 - - [08/Jun/2023 23:02:54] "[33mGET / HTTP/1.1[0m" 404 -
+2023-06-08 23:02:54,890 [INFO] 127.0.0.1 - - [08/Jun/2023 23:02:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-08 23:03:03,316 [INFO] Attempting aggregation
+2023-06-08 23:03:03,317 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:03:13,326 [INFO] Attempting aggregation
+2023-06-08 23:03:13,327 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:03:23,334 [INFO] Attempting aggregation
+2023-06-08 23:03:23,334 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:03:26,971 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:120> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 127, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 124, in run_parallel
+    await asyncio.gather(task1, task2)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 114, in aggregator
+    Aggregator(2, wallet).wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 54, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:03:26,973 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f0a25de4040>
+2023-06-08 23:17:02,030 [INFO] Started aggregator main loop
+2023-06-08 23:17:12,036 [INFO] Attempting aggregation
+2023-06-08 23:17:12,036 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:17:22,047 [INFO] Attempting aggregation
+2023-06-08 23:17:22,047 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:17:32,056 [INFO] Attempting aggregation
+2023-06-08 23:17:32,056 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:17:42,066 [INFO] Attempting aggregation
+2023-06-08 23:17:42,067 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:17:52,074 [INFO] Attempting aggregation
+2023-06-08 23:17:52,074 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:18:01,269 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:119> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 130, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 126, in run_parallel
+    await asyncio.gather(task2, task1)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 114, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:18:01,271 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fe45a19c100>
+2023-06-08 23:18:11,087 [INFO] Started aggregator main loop
+2023-06-08 23:18:21,096 [INFO] Attempting aggregation
+2023-06-08 23:18:21,096 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:18:31,106 [INFO] Attempting aggregation
+2023-06-08 23:18:31,106 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:18:41,117 [INFO] Attempting aggregation
+2023-06-08 23:18:41,117 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:18:51,127 [INFO] Attempting aggregation
+2023-06-08 23:18:51,128 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:01,137 [INFO] Attempting aggregation
+2023-06-08 23:19:01,137 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:11,147 [INFO] Attempting aggregation
+2023-06-08 23:19:11,148 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:21,156 [INFO] Attempting aggregation
+2023-06-08 23:19:21,157 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:31,166 [INFO] Attempting aggregation
+2023-06-08 23:19:31,167 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:41,177 [INFO] Attempting aggregation
+2023-06-08 23:19:41,177 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:19:51,186 [INFO] Attempting aggregation
+2023-06-08 23:19:51,186 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:01,193 [INFO] Attempting aggregation
+2023-06-08 23:20:01,194 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:11,203 [INFO] Attempting aggregation
+2023-06-08 23:20:11,203 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:21,213 [INFO] Attempting aggregation
+2023-06-08 23:20:21,213 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:21,995 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:119> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 130, in <module>
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 126, in run_parallel
+    task2 = asyncio.create_task(start_server(server))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 114, in start_aggregator
+    print("aslkdjflkasdjf")
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:20:21,996 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f38971a0130>
+2023-06-08 23:20:28,405 [INFO] Started aggregator main loop
+2023-06-08 23:20:38,414 [INFO] Attempting aggregation
+2023-06-08 23:20:38,414 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:48,423 [INFO] Attempting aggregation
+2023-06-08 23:20:48,423 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:20:58,433 [INFO] Attempting aggregation
+2023-06-08 23:20:58,433 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:08,444 [INFO] Attempting aggregation
+2023-06-08 23:21:08,444 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:18,454 [INFO] Attempting aggregation
+2023-06-08 23:21:18,455 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:28,463 [INFO] Attempting aggregation
+2023-06-08 23:21:28,463 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:38,473 [INFO] Attempting aggregation
+2023-06-08 23:21:38,473 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:48,476 [INFO] Attempting aggregation
+2023-06-08 23:21:48,476 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:21:58,486 [INFO] Attempting aggregation
+2023-06-08 23:21:58,487 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:08,496 [INFO] Attempting aggregation
+2023-06-08 23:22:08,496 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:18,507 [INFO] Attempting aggregation
+2023-06-08 23:22:18,507 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:28,516 [INFO] Attempting aggregation
+2023-06-08 23:22:28,516 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:38,527 [INFO] Attempting aggregation
+2023-06-08 23:22:38,527 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:48,536 [INFO] Attempting aggregation
+2023-06-08 23:22:48,536 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:22:57,908 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:121> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 132, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 128, in run_parallel
+    await asyncio.gather(task2, task1)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 115, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:22:57,909 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f36f21b0100>
+2023-06-08 23:23:04,274 [INFO] Started aggregator main loop
+2023-06-08 23:23:12,803 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:121> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 132, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 128, in run_parallel
+    await asyncio.gather(task2, task1)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 115, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:23:12,803 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fde7dfa0250>
+2023-06-08 23:24:56,022 [INFO] Started aggregator main loop
+2023-06-08 23:25:06,029 [INFO] Attempting aggregation
+2023-06-08 23:25:06,030 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:25:12,066 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<start_aggregator() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:113> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 133, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 115, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:25:12,067 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ff026d90220>
+2023-06-08 23:25:18,475 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f3ca85881f0>
+2023-06-08 23:26:30,729 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 23:26:30,729 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 23:26:57,664 [INFO] Started aggregator main loop
+2023-06-08 23:27:07,673 [INFO] Attempting aggregation
+2023-06-08 23:27:07,673 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:27:17,683 [INFO] Attempting aggregation
+2023-06-08 23:27:17,683 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:27:19,560 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:121> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 132, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 128, in run_parallel
+    await asyncio.gather(task1, task2)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 115, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:27:19,561 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f27d05a0250>
+2023-06-08 23:27:25,602 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 23:27:25,602 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 23:27:39,893 [INFO] 127.0.0.1 - - [08/Jun/2023 23:27:39] "[33mGET / HTTP/1.1[0m" 404 -
+2023-06-08 23:27:40,520 [INFO] 127.0.0.1 - - [08/Jun/2023 23:27:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-08 23:27:48,854 [INFO] 127.0.0.1 - - [08/Jun/2023 23:27:48] "[33mGET /send_transaction HTTP/1.1[0m" 404 -
+2023-06-08 23:28:03,722 [INFO] 127.0.0.1 - - [08/Jun/2023 23:28:03] "[31m[1mGET /queue_transaction HTTP/1.1[0m" 405 -
+2023-06-08 23:43:50,060 [INFO] Started aggregator main loop
+2023-06-08 23:43:52,552 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa5685ac190>
+2023-06-08 23:44:06,173 [INFO] Started aggregator main loop
+2023-06-08 23:44:16,183 [INFO] Attempting aggregation
+2023-06-08 23:44:16,183 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:44:26,193 [INFO] Attempting aggregation
+2023-06-08 23:44:26,193 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:44:36,203 [INFO] Attempting aggregation
+2023-06-08 23:44:36,203 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:44:39,056 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<run_parallel() done, defined at /home/alberto/Epfl/chia/sigint/aggregator.py:121> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 132, in <module>
+    asyncio.run(run_parallel())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 128, in run_parallel
+    await asyncio.gather(task1, task2)
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 115, in start_aggregator
+    aggregator.wait_for_txs()
+  File "/home/alberto/Epfl/chia/sigint/aggregator.py", line 55, in wait_for_txs
+    time.sleep(10)
+KeyboardInterrupt
+2023-06-08 23:44:39,057 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f211cda42e0>
+2023-06-08 23:44:51,852 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 23:44:51,852 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 23:46:13,655 [INFO] Started aggregator main loop
+2023-06-08 23:46:23,665 [INFO] Attempting aggregation
+2023-06-08 23:46:23,666 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:46:26,069 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f6dccd98250>
+2023-06-08 23:54:43,127 [INFO] Started aggregator main loop
+2023-06-08 23:54:58,398 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2023-06-08 23:54:58,398 [INFO] [33mPress CTRL+C to quit[0m
+2023-06-08 23:54:59,682 [INFO] Started aggregator main loop
+2023-06-08 23:55:09,693 [INFO] Attempting aggregation
+2023-06-08 23:55:09,693 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:55:19,703 [INFO] Attempting aggregation
+2023-06-08 23:55:19,703 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:55:29,713 [INFO] Attempting aggregation
+2023-06-08 23:55:29,713 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:55:39,723 [INFO] Attempting aggregation
+2023-06-08 23:55:39,723 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:55:49,733 [INFO] Attempting aggregation
+2023-06-08 23:55:49,733 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:55:59,743 [INFO] Attempting aggregation
+2023-06-08 23:55:59,743 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:09,753 [INFO] Attempting aggregation
+2023-06-08 23:56:09,753 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:19,764 [INFO] Attempting aggregation
+2023-06-08 23:56:19,764 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:29,774 [INFO] Attempting aggregation
+2023-06-08 23:56:29,775 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:39,785 [INFO] Attempting aggregation
+2023-06-08 23:56:39,785 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:49,793 [INFO] Attempting aggregation
+2023-06-08 23:56:49,793 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:56:59,803 [INFO] Attempting aggregation
+2023-06-08 23:56:59,804 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:09,814 [INFO] Attempting aggregation
+2023-06-08 23:57:09,814 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:19,824 [INFO] Attempting aggregation
+2023-06-08 23:57:19,824 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:29,834 [INFO] Attempting aggregation
+2023-06-08 23:57:29,834 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:39,845 [INFO] Attempting aggregation
+2023-06-08 23:57:39,845 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:49,853 [INFO] Attempting aggregation
+2023-06-08 23:57:49,853 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:57:59,863 [INFO] Attempting aggregation
+2023-06-08 23:57:59,863 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:09,867 [INFO] Attempting aggregation
+2023-06-08 23:58:09,867 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:19,870 [INFO] Attempting aggregation
+2023-06-08 23:58:19,871 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:29,881 [INFO] Attempting aggregation
+2023-06-08 23:58:29,881 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:39,882 [INFO] Attempting aggregation
+2023-06-08 23:58:39,883 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:49,893 [INFO] Attempting aggregation
+2023-06-08 23:58:49,893 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:58:59,903 [INFO] Attempting aggregation
+2023-06-08 23:58:59,903 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:09,913 [INFO] Attempting aggregation
+2023-06-08 23:59:09,913 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:19,923 [INFO] Attempting aggregation
+2023-06-08 23:59:19,923 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:29,933 [INFO] Attempting aggregation
+2023-06-08 23:59:29,933 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:39,943 [INFO] Attempting aggregation
+2023-06-08 23:59:39,943 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:49,953 [INFO] Attempting aggregation
+2023-06-08 23:59:49,953 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-08 23:59:59,963 [INFO] Attempting aggregation
+2023-06-08 23:59:59,963 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:00:09,970 [INFO] Attempting aggregation
+2023-06-09 00:00:09,970 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:00:19,979 [INFO] Attempting aggregation
+2023-06-09 00:00:19,980 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:00:29,990 [INFO] Attempting aggregation
+2023-06-09 00:00:29,990 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:00:39,999 [INFO] Attempting aggregation
+2023-06-09 00:00:40,000 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:00:50,016 [INFO] Attempting aggregation
+2023-06-09 00:00:50,016 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:01:00,023 [INFO] Attempting aggregation
+2023-06-09 00:01:00,024 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:01:10,033 [INFO] Attempting aggregation
+2023-06-09 00:01:10,033 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:01:20,043 [INFO] Attempting aggregation
+2023-06-09 00:01:20,043 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:01:30,045 [INFO] Attempting aggregation
+2023-06-09 00:01:30,045 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:01:40,053 [INFO] Attempting aggregation
+2023-06-09 00:01:40,053 [INFO] Aggregation not possible, waiting for 2 tx(s)
+2023-06-09 00:08:08,474 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fa835094100>
+2023-06-09 00:09:01,884 [ERROR] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7ffa22791ff0>

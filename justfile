@@ -1,3 +1,9 @@
+test: update
+  python tests.py
+
+aggregator: update
+  python aggregator.py
+
 server: update
   python server.py
 
