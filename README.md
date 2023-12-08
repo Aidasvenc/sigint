@@ -69,8 +69,8 @@ Most of the changes were implemented in the WalletRpcApi.py a file that exposes 
 endpoints that can be used and consequently reflected in its python wrapper used by the aggregator
 WalletRpcClient.py.
 The most significant additions were two new wallet endpoints that can only be called by aggregators:
-• `sigint_sign_digest` to send requests to sign the aggregated digests
-• `sigint_send_aggregated_transactions` to send aggregated transaction to the mempool
+- `sigint_sign_digest` to send requests to sign the aggregated digests
+- `sigint_send_aggregated_transactions` to send aggregated transaction to the mempool
 
 ## Evaluation of the hypothesis
 In order to test our hypothesis of SIGINT interactive signature validation protocol multiple testing phases
@@ -205,19 +205,20 @@ thereby optimizing gas costs and acting as an onchain aggregator.
 As mentioned in the implementation section many design and structural simplifications as well as assumptions
 were made to respect the time and depth constraints of the project. Hence, the following points are left as a
 future reference for continued exploration of SIGINT interactive protocol.
-• Communication between the aggregator and the the node should fully happen over the SSL secured
+
+- Communication between the aggregator and the the node should fully happen over the SSL secured
 JSON-RPC native protocol.
-• All the placeholder verifications functions should actually make sure of the correctness of the transactions
+- All the placeholder verifications functions should actually make sure of the correctness of the transactions
 received. Ideally this should be done by referencing the same code used in the blockchain to verify
 blocks/transactions by eventually modularizing it when necessary to avoid code duplication.
-• Gas costs for the transaction has not been taken into account in the sandboxed environment used for
+- Gas costs for the transaction has not been taken into account in the sandboxed environment used for
 testing. Aggregating transaction could even help saving gas since multiple senders can pay together.
-• Testing should be executed in a real blockchain-dedicated environment that is efficient in executing
+- Testing should be executed in a real blockchain-dedicated environment that is efficient in executing
 blockchain operations.
-• SIGINT interactive protocol part should be extensively tested with a system of multiple clients,
+- SIGINT interactive protocol part should be extensively tested with a system of multiple clients,
 aggregators and validators that would continuously send and generate new payloads. Stress-testing
 and safety-testing could also be performed to remark the issues and bottlenecks.
-• Further in-depth collaboration with Chia blockchain developer team may be established to work on
+- Further in-depth collaboration with Chia blockchain developer team may be established to work on
 natively implementing SIGINT protocol in the blockchain.
 
 ## Attributions
